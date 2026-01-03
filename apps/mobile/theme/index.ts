@@ -1,0 +1,372 @@
+import { createTheme } from "@shopify/restyle";
+import pallete from "./pallete";
+
+const theme = createTheme({
+  breakpoints: {
+    smallPhone: 0,
+    phone: 400,
+    tablet: 768,
+    desktop: 1024,
+  },
+  colors: pallete,
+  spacing: {
+    none: 0,
+    xs: 4,
+    s: 6,
+    m: 16,
+    l: 24,
+    xl: 40,
+    xxl: 64,
+    xxxl: 80,
+    xxxxl: 120,
+  },
+  imageVariants: {
+    default: {
+      width: 40,
+      height: 40,
+    },
+    defaults: {
+      width: 40,
+      height: 40,
+    },
+    init: {
+      width: 262,
+      height: 271,
+      marginTop: {
+        smallPhone: 0,
+        phone: "xxxxl",
+      },
+    },
+  },
+  containerVariants: {
+    chip: {
+      maxWidth: 300,
+      height: 40,
+      p: "s",
+      borderRadius: 4,
+      backgroundColor: "textBlue",
+    },
+    defaults: {
+      flex: 1,
+      p: "m",
+      pt: "xl",
+      alignItems: "center",
+      backgroundColor: "backgroundLight",
+    },
+    chat: {
+      flex: 1,
+      px: "l",
+      pt: "xl",
+      pb: "none",
+      alignItems: "center",
+      backgroundColor: "backgroundGrayLight",
+    },
+    screen: {
+      flex: 1,
+      p: "m",
+      pt: "xl",
+      alignItems: "center",
+      backgroundColor: "backgroundLight",
+    },
+  },
+  boxVariants: {
+    screen: {
+      flex: 1,
+      backgroundColor: "backgroundLight",
+    },
+  },
+  pressableVariants: {
+    input: {
+      fontFamily: "MulishFont",
+      backgroundColor: "inputBackgroundLight",
+      color: "inputTextLight",
+      flex: 1,
+      width: "100%",
+      minHeight: 40,
+      borderRadius: 6,
+      p: "s",
+      fontSize: 16,
+      flexDirection: "row",
+      alignItems: "center",
+      justifyContent: "flex-start",
+      gap: "s",
+    },
+    transparent: {
+      backgroundColor: "transparent",
+    },
+    chip: {
+      maxWidth: 400,
+      alignItems: "center",
+      justifyContent: "center",
+      p: "s",
+      borderRadius: 4,
+      backgroundColor: "backgroundGrayLight",
+      mr: "s",
+    },
+    default: {
+      backgroundColor: "buttonBackgroundLight",
+    },
+    defaults: {
+      backgroundColor: "buttonBackgroundLight",
+    },
+  },
+  buttonVariants: {
+    red: {
+      backgroundColor: "finish",
+      color: "buttonTextLight",
+    },
+    transparent: {
+      backgroundColor: "transparent",
+      color: "buttonTextGray",
+    },
+    chipDisabled: {
+      width: 350,
+      height: 40,
+      alignItems: "center",
+      justifyContent: "center",
+      p: "s",
+      borderRadius: 4,
+      backgroundColor: "backgroundGrayLight",
+      mr: "s",
+      opacity: 0.5,
+      color: "buttonTextLight",
+    },
+    chip: {
+      width: 350,
+      height: 40,
+      alignItems: "center",
+      justifyContent: "center",
+      p: "xs",
+      borderRadius: 4,
+      backgroundColor: "backgroundGrayLight",
+      color: "buttonTextLight",
+      mr: "s",
+    },
+    icon: {
+      backgroundColor: "transparent",
+      color: "buttonTextLight",
+      alignItems: "center",
+      justifyContent: "center",
+      width: 50,
+      height: 50,
+    },
+    default: {
+      backgroundColor: "buttonBackgroundLight",
+      color: "buttonTextLight",
+      alignItems: "center",
+      justifyContent: "center",
+      borderRadius: 30,
+      width: "85%",
+      maxWidth: 450,
+      height: {
+        smallPhone: 50,
+        phone: 60,
+      },
+    },
+    defaults: {
+      backgroundColor: "buttonBackgroundLight",
+      color: "buttonTextLight",
+      alignItems: "center",
+      justifyContent: "center",
+      borderRadius: 30,
+      width: "85%",
+      maxWidth: 450,
+      height: {
+        smallPhone: 50,
+        phone: 60,
+      },
+    },
+    primary: {
+      backgroundColor: "buttonBackgroundLight",
+      color: "buttonTextLight",
+    },
+    secondary: {
+      backgroundColor: "buttonBackgroundGray",
+      color: "buttonTextDark",
+    },
+    cameraOption: {
+      width: {
+        smallPhone: 40,
+        phone: 50,
+      },
+      height: {
+        smallPhone: 40,
+        phone: 50,
+      },
+      borderRadius: 10,
+      backgroundColor: "transparent",
+      color: "buttonTextGray",
+      borderWidth: 2,
+      borderColor: "buttonBackgroundGray",
+    },
+  },
+  textVariants: {
+    "label-error": {
+      width: "100%",
+      fontFamily: "MulishFont",
+      fontSize: 14,
+      color: "error",
+    },
+    label: {
+      fontFamily: "MulishFontMedium",
+      fontSize: 14,
+    },
+    header2: {
+      fontFamily: "MulishFontMedium",
+      fontSize: 16,
+      lineHeight: 24,
+      textAlign: "center",
+    },
+    messageTime: {
+      fontFamily: "MulishFontMedium",
+      fontSize: 12,
+    },
+    message: {
+      fontFamily: "MulishFontMedium",
+      fontSize: 16,
+      lineHeight: 24,
+    },
+    containerHeader: {
+      fontFamily: "MulishFontBold",
+      fontSize: 24,
+    },
+    button: {
+      fontFamily: "MulishFontMedium",
+      fontSize: {
+        smallPhone: 16,
+        phone: 18,
+      },
+      color: "buttonTextLight",
+    },
+    header: {
+      fontFamily: "MulishFontBold",
+      fontSize: {
+        smallPhone: 20,
+        phone: 30,
+      },
+      textAlign: "center",
+    },
+    body: {
+      fontFamily: "MulishFontMedium",
+      fontSize: {
+        smallPhone: 14,
+        phone: 16,
+      },
+      lineHeight: 24,
+    },
+    defaults: {},
+    infoTitle: {
+      fontFamily: "MulishFontBold",
+      fontSize: 16,
+    },
+    infoSubtitle: {
+      fontFamily: "MulishFont",
+      fontSize: 14,
+      color: "textGray",
+    },
+  },
+  textInputVariants: {
+    iconRigth: {
+      fontFamily: "MulishFont",
+      backgroundColor: "inputBackgroundLight",
+      color: "inputTextLight",
+      flex: 1,
+      height: 40,
+      borderTopLeftRadius: 6,
+      borderBottomLeftRadius: 6,
+      borderBottomRightRadius: 0,
+      borderTopRightRadius: 0,
+      p: "s",
+      maxWidth: 450,
+      fontSize: 16,
+    },
+    iconLeft: {
+      fontFamily: "MulishFont",
+      backgroundColor: "inputBackgroundLight",
+      color: "inputTextLight",
+      flex: 1,
+      height: 40,
+      maxWidth: 450,
+      borderTopLeftRadius: 0,
+      borderBottomLeftRadius: 0,
+      borderBottomRightRadius: 6,
+      borderTopRightRadius: 6,
+      p: "s",
+      fontSize: 16,
+    },
+    default: {
+      fontFamily: "MulishFontMedium",
+      backgroundColor: "inputBackgroundLight",
+      color: "inputTextLight",
+      flex: 1,
+      maxWidth: 450,
+      height: 40,
+      borderRadius: 6,
+      p: "s",
+      fontSize: 16,
+    },
+    primary: {
+      fontFamily: "MulishFont",
+
+      backgroundColor: "inputBackgroundLight",
+      color: "inputTextLight",
+    },
+    secondary: {
+      fontFamily: "MulishFont",
+
+      backgroundColor: "inputBackgroundDark",
+      color: "inputTextDark",
+    },
+    code: {
+      fontFamily: "MulishFontBold",
+      backgroundColor: "inputBackgroundLight",
+      color: "inputTextLight",
+      width: {
+        smallPhone: 30,
+        phone: 35,
+        desktop: 40,
+      },
+      height: {
+        smallPhone: 30,
+        phone: 35,
+        desktop: 40,
+      },
+      borderRadius: "50%",
+      textAlign: "center",
+      fontSize: 40,
+    },
+  },
+  flashListVariants: {
+    messages: {
+      backgroundColor: "backgroundGrayLight",
+      width: "100%",
+      maxHeight: 800,
+    },
+    defaults: {
+      backgroundColor: "backgroundLight",
+      width: "100%",
+      maxWidth: 450,
+      maxHeight: 800,
+    },
+    messageOptions: {
+      width: "100%",
+      backgroundColor: "backgroundLight",
+      height: 40,
+      maxHeight: 40,
+    },
+  },
+  cameraVariants: {
+    defaults: {
+      width: 40,
+      height: 40,
+    },
+    code: {
+      flex: 1,
+      width: "100%",
+      height: "100%",
+    },
+  },
+});
+
+export type Theme = typeof theme;
+export default theme;

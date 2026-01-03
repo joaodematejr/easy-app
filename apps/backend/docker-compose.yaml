@@ -1,0 +1,25 @@
+version: "3.8"
+
+services:
+  easy-app-mongo:
+    image: mongo:latest
+    container_name: easy-app-mongo
+    hostname: easy-app-mongo
+    restart: unless-stopped
+    environment:
+      - "MONGO_INITDB_ROOT_USERNAME=admin"
+      - "MONGO_INITDB_ROOT_PASSWORD=admin"
+    healthcheck:
+      test: echo 'db.stats().ok' | mongo localhost:27017/easy-app-system --quiet
+      start_period: 10s
+    volumes:
+      - ./data/mongo:/data/db
+      - ./docker/mongo/init-mongo.sh:/docker-entrypoint-initdb.d/init-mongo.sh:ro
+    ports:
+      - "27017:27017"
+    networks:
+      - easy-app-network
+
+networks:
+  easy-app-network:
+    driver: bridge

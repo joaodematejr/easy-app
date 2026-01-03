@@ -1,0 +1,51 @@
+import Button from "@/components/theme/Button";
+import { Container } from "@/components/theme/Container";
+import { MessageOptions } from "@/components/theme/MessageOptions";
+import { StepHeader } from "@/components/theme/StepHeader";
+import { TextInput } from "@/components/theme/TextInput";
+import { useCommunicationRequestStore } from "@/stores/communicationRequestStore";
+import { useRouter } from "expo-router";
+import { useState } from "react";
+
+export default function InitialMessage() {
+  const { push } = useRouter();
+  const [messageSelected, setMessageSelected] = useState<string>();
+
+  const handleSubmit = () => {
+    if (!messageSelected) return;
+    useCommunicationRequestStore.getState().setInitialMessage(messageSelected);
+    push("/(communication-request)/(steps)/name");
+  };
+
+  return (
+    <Container variant="screen">
+      <StepHeader
+        title="Escreva a sua mensagem inicial"
+        subtitle="Informe aqui o motivo do seu contato com o residente"
+      />
+      <MessageOptions
+        messageSelected={messageSelected}
+        setMessageSelected={setMessageSelected}
+      />
+      <TextInput
+        value={messageSelected}
+        autoFocus
+        placeholder="Ex.: Entrega de comida"
+        minHeight={120}
+        onEndEditing={({ nativeEvent }) => setMessageSelected(nativeEvent.text)}
+        multiline
+      />
+      <Button
+        text="Continuar"
+        marginTop="xl"
+        onPress={() => handleSubmit()}
+        disabled={!messageSelected}
+        style={{
+          justifyContent: "center",
+          alignItems: "center",
+          opacity: messageSelected ? 1 : 0.5,
+        }}
+      />
+    </Container>
+  );
+}
