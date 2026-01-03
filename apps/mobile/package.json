@@ -4,7 +4,8 @@
   "version": "1.0.0",
   "scripts": {
     "mobile": "expo start --tunnel -c",
-    "dev": "expo start --tunnel -c",
+    "update-env": "node update-env.js",
+    "dev": "npm run update-env && expo start --tunnel -c",
     "start": "expo start --tunnel -c",
     "android": "expo start --android",
     "ios": "expo start --ios",

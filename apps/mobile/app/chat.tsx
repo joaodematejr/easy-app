@@ -64,16 +64,13 @@ export default function ChatScreen() {
     chatController;
 
   const renderMessageItem = useCallback(
-    ({ item }: { item: any }) => {
-      console.log("🚀 ~ ChatScreen ~ item:", item.sender);
-      return (
-        <Message
-          content={item.content}
-          isMyMessage={item.sender._id.toString() === currentUserId}
-          timestamp={item.timestamp}
-        />
-      );
-    },
+    ({ item }: { item: any }) => (
+      <Message
+        content={item.content}
+        isMyMessage={item.sender._id.toString() === currentUserId}
+        timestamp={item.timestamp}
+      />
+    ),
     [currentUserId]
   );
 

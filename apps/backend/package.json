@@ -4,9 +4,9 @@
   "private": true,
   "scripts": {
     "build": "nest build",
-    "ngrok:start": "ngrok http 3001 --log=stdout > ngrok.log &",
-    "ngrok:stop": "pkill -f 'ngrok http 3001'",
+    "ngrok:start": "rm -f ngrok.log && touch ngrok.log && ngrok http 3001 --log=stdout > ngrok.log &",
     "dev": "npm run ngrok:start && (docker compose ps | grep -q 'Up' || docker compose up -d) && nest start --watch",
+    "ngrok:stop": "pkill -f 'ngrok http 3001'",
     "backend": "npm run dev",
     "start": "npm run ngrok:start && nest start && npm run ngrok:stop",
     "start:prod": "node dist/main",

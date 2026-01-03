@@ -3,10 +3,10 @@
   "private": true,
   "scripts": {
     "mobile": "turbo run mobile",
-    "start": "turbo run start",
+    "start": "turbo run dev --parallel",
     "backend": "turbo run backend",
     "build": "turbo run build",
-    "dev": "turbo run dev",
+    "dev": "turbo run dev --parallel",
     "lint": "turbo run lint",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "check-types": "turbo run check-types"
