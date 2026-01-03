@@ -8,7 +8,7 @@ O objetivo principal é eliminar a configuração inicial repetitiva, entregando
 
 ## ✨ Funcionalidades Principais
 
-- **⚡ Inicialização Instantânea:** Com apenas um comando (`npm start`), o backend (incluindo banco de dados via Docker) e o frontend (Expo) entram em execução simultânea.
+- **⚡ Inicialização Instantânea:** Com apenas um comando (`yarn start`), o backend (incluindo banco de dados via Docker) e o frontend (Expo) entram em execução simultânea.
 - **📱 Cross-Platform Real:** Uma única base de código frontend que atende **Android, iOS e Web**.
 - **💬 Chat Real-time:** Sistema de mensagens integrado utilizando **Socket.io** com autenticação JWT.
 - **🏗️ Backend Modular:** Arquitetura evolutiva com NestJS, facilitando a escalabilidade e manutenção.
@@ -72,7 +72,7 @@ easy-app/
 1. **Clone o repositório:**
 
 ```bash
-git clone https://github.com/seu-usuario/easy-app.git
+git clone https://github.com/Jxnatan7/easy-app.git
 cd easy-app
 
 ```
@@ -80,14 +80,14 @@ cd easy-app
 2. **Instale as dependências:**
 
 ```bash
-npm install
+yarn install
 
 ```
 
 3. **Inicie a aplicação completa:**
 
 ```bash
-npm start
+yarn start
 
 ```
 
@@ -102,14 +102,14 @@ _Este comando irá:_
 
 ## 🕹️ Scripts Disponíveis
 
-| Comando           | Descrição                                             |
-| ----------------- | ----------------------------------------------------- |
-| `npm start`       | Inicia backend e frontend simultaneamente.            |
-| `npm run backend` | Inicia apenas o servidor NestJS (com Docker e Ngrok). |
-| `npm run mobile`  | Inicia apenas o ambiente Expo com suporte a túnel.    |
-| `npm run build`   | Compila ambas as aplicações para produção.            |
-| `npm run lint`    | Executa a verificação de lint em todo o monorepo.     |
-| `npm run format`  | Formata o código usando Prettier.                     |
+| Comando        | Descrição                                             |
+| -------------- | ----------------------------------------------------- |
+| `yarn start`   | Inicia backend e frontend simultaneamente.            |
+| `yarn backend` | Inicia apenas o servidor NestJS (com Docker e Ngrok). |
+| `yarn mobile`  | Inicia apenas o ambiente Expo com suporte a túnel.    |
+| `yarn build`   | Compila ambas as aplicações para produção.            |
+| `yarn lint`    | Executa a verificação de lint em todo o monorepo.     |
+| `yarn format`  | Formata o código usando Prettier.                     |
 
 ---
 
