@@ -2,13 +2,13 @@
 
 ### [PT](https://github.com/Jxnatan7/easy-app)
 
-### [EN](https://github.com/Jxnatan7/easy-app/README-en.md)
+### [EN](https://github.com/Jxnatan7/easy-app/blob/master/README-en.md)
 
-### [ES](https://github.com/Jxnatan7/easy-app/README-es.md)
+### [ES](https://github.com/Jxnatan7/easy-app/blob/master/README-es.md)
 
-### [ZH](https://github.com/Jxnatan7/easy-app/README-zh.md)
+### [ZH](https://github.com/Jxnatan7/easy-app/blob/master/README-zh.md)
 
-### [HI](https://github.com/Jxnatan7/easy-app/README-hi.md)
+### [HI](https://github.com/Jxnatan7/easy-app/blob/master/README-hi.md)
 
 **Easy App** 是一个完整且具有指导性的生态系统，旨在加速跨平台应用的开发。它采用 Monorepo（单一代码库）架构，将强大的 **NestJS** 后端与灵活的 **Expo (React Native)** 前端统一管理。
 

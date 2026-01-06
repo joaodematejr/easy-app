@@ -2,13 +2,13 @@
 
 ### [PT](https://github.com/Jxnatan7/easy-app)
 
-### [EN](https://github.com/Jxnatan7/easy-app/README-en.md)
+### [EN](https://github.com/Jxnatan7/easy-app/blob/master/README-en.md)
 
-### [ES](https://github.com/Jxnatan7/easy-app/README-es.md)
+### [ES](https://github.com/Jxnatan7/easy-app/blob/master/README-es.md)
 
-### [ZH](https://github.com/Jxnatan7/easy-app/README-zh.md)
+### [ZH](https://github.com/Jxnatan7/easy-app/blob/master/README-zh.md)
 
-### [HI](https://github.com/Jxnatan7/easy-app/README-hi.md)
+### [HI](https://github.com/Jxnatan7/easy-app/blob/master/README-hi.md)
 
 O **Easy App** é um ecossistema completo e opinativo para o desenvolvimento acelerado de aplicações cross-platform. Ele utiliza uma arquitetura de monorepositório para unificar um backend robusto em **NestJS** com um frontend versátil em **Expo (React Native)**.
 

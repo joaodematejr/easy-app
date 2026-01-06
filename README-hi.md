@@ -2,13 +2,13 @@
 
 ### [PT](https://github.com/Jxnatan7/easy-app)
 
-### [EN](https://github.com/Jxnatan7/easy-app/README-en.md)
+### [EN](https://github.com/Jxnatan7/easy-app/blob/master/README-en.md)
 
-### [ES](https://github.com/Jxnatan7/easy-app/README-es.md)
+### [ES](https://github.com/Jxnatan7/easy-app/blob/master/README-es.md)
 
-### [ZH](https://github.com/Jxnatan7/easy-app/README-zh.md)
+### [ZH](https://github.com/Jxnatan7/easy-app/blob/master/README-zh.md)
 
-### [HI](https://github.com/Jxnatan7/easy-app/README-hi.md)
+### [HI](https://github.com/Jxnatan7/easy-app/blob/master/README-hi.md)
 
 **Easy App** त्वरित क्रॉस-प्लेटफ़ॉर्म एप्लिकेशन विकास के लिए एक व्यापक और सुव्यवस्थित इकोसिस्टम है। यह एक मजबूत **NestJS** बैकएंड को बहुमुखी **Expo (React Native)** फ्रंटएंड के साथ जोड़ने के लिए मोनोरेपो (Monorepo) आर्किटेक्चर का उपयोग करता है।
 
